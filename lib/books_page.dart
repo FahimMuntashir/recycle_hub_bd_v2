@@ -47,7 +47,7 @@ Widget _buildCard(String name, String price, String imgPath, bool added,
       child: InkWell(
           onTap: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => PickupRequestForm()));
+                MaterialPageRoute(builder: (context) => PickupDetails()));
 
             // _scaleController.forward();
           },

@@ -212,77 +212,79 @@ class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        width: double.infinity,
-        padding: EdgeInsets.all(20.0),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Colors.green.shade100, Colors.green.shade50],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
+      body: SingleChildScrollView(
+        child: Container(
+          width: double.infinity,
+          padding: EdgeInsets.all(20.0),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.green.shade100, Colors.green.shade50],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
           ),
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Image.asset(
-              'assets/images/recycle_hub_logo.png',
-              height: 350,
-            ),
-            SizedBox(height: 60),
-            
-            SizedBox(height: 70),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green.shade700,
-                padding: EdgeInsets.symmetric(horizontal: 50, vertical: 18),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50.0),
-                ),
-                elevation: 8,
-                shadowColor: Colors.black45,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Image.asset(
+                'assets/images/recycle_hub_logo.png',
+                height: 350,
               ),
-              onPressed: () {
-                Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => PhoneAuth()));
-
-                // Add functionality for login button
-              },
-              child: Text(
-                'Login',
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
+              SizedBox(height: 60),
+              
+              SizedBox(height: 70),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green.shade700,
+                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 18),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(50.0),
+                  ),
+                  elevation: 8,
+                  shadowColor: Colors.black45,
                 ),
-              ),
-            ),
-            SizedBox(height: 30),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.lightGreenAccent.shade400,
-                padding: EdgeInsets.symmetric(horizontal: 50, vertical: 18),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50.0),
-                ),
-                elevation: 8,
-                shadowColor: Colors.black45,
-              ),
-              onPressed: () {
-                Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => ScrapPage()));
-                // Add functionality for get started button
-              },
-              child: Text(
-                'Get Started',
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
+                onPressed: () {
+                  // Navigator.push(context,
+                  //       MaterialPageRoute(builder: (context) => PhoneAuth()));
+        
+                  // Add functionality for login button
+                },
+                child: Text(
+                  'Login',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
-            ),
-          ],
+              SizedBox(height: 30),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.lightGreenAccent.shade400,
+                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 18),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(50.0),
+                  ),
+                  elevation: 8,
+                  shadowColor: Colors.black45,
+                ),
+                onPressed: () {
+                  Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ScrapPage()));
+                  // Add functionality for get started button
+                },
+                child: Text(
+                  'Get Started',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
