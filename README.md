@@ -71,10 +71,11 @@ Contributions are welcome! Please follow the guidelines in `CONTRIBUTING.md` bef
 
 ## 📬 Feedback
 
-If you have any feedback or suggestions, feel free to reach out via **[Fahim Muntashir](https://github.com/FahimMuntashir)** or create an issue in this repository.
+If you have any feedback or suggestions, feel free to reach out via **[Fahim Muntashir](https://github.com/FahimMuntashir) or [Fardin Islam Khan](https://github.com/fardinik98)** or create an issue in this repository.
 
 ---
 
 ## 👥 Authors
 
 - **Fahim Muntashir** - [GitHub](https://github.com/FahimMuntashir)
+- **Fardin Islam Khan** - [Github](https://github.com/fardinik98)
